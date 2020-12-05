@@ -70,7 +70,7 @@ def main():
             continue
 
         if version.startswith('7') or version.startswith('8') or version.startswith('9'):
-            sys.exit('[ERROR] Decrypting pre-iOS 10 version are not supported yet. Exiting...')
+            continue
 
         template = device.Device(args.device[0], version)
         wiki_template = template.template
